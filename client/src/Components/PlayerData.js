@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import PlayerCard from './PlayerCard'
 
 export default class PlayerData extends Component {
 
@@ -21,7 +22,17 @@ export default class PlayerData extends Component {
     render() {
         return (
             <div>
-                
+
+                {this.state.players.map((player)=>{
+                    return(
+
+                            <PlayerCard
+                            name={player.name}
+                            country={player.country}
+                            searches={player.searches}/>
+                    )
+                })}
+              
             </div>
         )
     }
