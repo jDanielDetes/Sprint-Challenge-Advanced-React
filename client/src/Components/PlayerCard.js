@@ -1,14 +1,22 @@
 import React, { Component } from 'react'
+import { Card } from  'semantic-ui-react'
 
 export default class PlayerCard extends Component {
 
     render() {
         return (
-            <div>
-                <h2>Name:{this.props.name}</h2>
-                <h4>Country:{this.props.country}</h4>
-                <p>Google searches:{this.props.searches}</p>
-            </div>
+           
+            <Card>
+              <Card.Content>
+                <Card.Header>{this.props.name}</Card.Header>
+                <Card.Meta>{this.props.country}</Card.Meta>
+                <Card.Description>
+                  Google Searches:{this.props.searches}
+                </Card.Description>
+              </Card.Content>
+            </Card>
+        
+        
         )
     }
 }
