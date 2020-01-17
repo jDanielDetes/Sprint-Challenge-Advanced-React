@@ -5269,6 +5269,11 @@ lodash.uniq@^4.5.0:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
 
+log@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/log/-/log-1.4.0.tgz#4ba1d890fde249b031dca03bc37eaaf325656f1c"
+  integrity sha1-S6HYkP3iSbAx3KA7w36q8yVlbxw=
+
 loglevel@^1.4.1:
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.3.tgz#77f2eb64be55a404c9fd04ad16d57c1d6d6b1280"
@@ -8301,6 +8306,13 @@ test-exclude@^5.2.3:
     minimatch "^3.0.4"
     read-pkg-up "^4.0.0"
     require-main-filename "^2.0.0"
+
+testing@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/testing/-/testing-2.0.1.tgz#50fd76afe0280a3af36282e0838e8cc8c0c48111"
+  integrity sha512-2zQ08tZ0fm7ziEsST6DIzIear/sz7AntmxlGsBm+1OPY1ymVzc9HGcLqLuJhwON1npQW/M2eRsukPliSSma+1Q==
+  dependencies:
+    log "1.4.0"
 
 text-table@0.2.0, text-table@^0.2.0:
   version "0.2.0"
